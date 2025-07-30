@@ -1,14 +1,14 @@
-#Spelltroum Tournament Betting Contract
+<h1>Spelltroum Tournament Betting Contract</h1>
 
 This repository contains an Anchor-based Solana smart contract that implements the betting logic for the Spelltroum game. The contract is deployed on DevNet and is called from the Spelltroum game client when players place bets or settle matches.
 
-##Overview
+<h3>Overview</h3>
 
 Players deposit SOL into their on-chain balance, play a 2–3 minute match in the game, and then, after a victory, a trusted backend service invokes the contract to distribute rewards. Once they have accumulated enough SOL, players can withdraw their balance.
 
 All bets and rewards are denominated in SOL.
 
-##Instruction Methods
+<h3>Instruction Methods</h3>
 
 1. deposit
 
@@ -32,21 +32,9 @@ Implements the core reward distribution logic:
 
 Currently open to the public for local testing. In the future, this instruction will be restricted to calls from a trusted backend authority when distributing rewards post-match. Additional work and testing are pending.
 
-##Deployment
+<h3>Deployment</h3>
 	•	Deployed to: DevNet
 	•	Program ID: Ayt8CLKegBbfHHGkFmMqutNepCAfWzNdo3zPxdqLnQws
-
-##Usage
-	1.	Setup
-	•	Install Anchor and Solana CLI.
-	•	Configure your environment to point to DevNet:
-
-solana config set --url https://api.devnet.solana.com
-
-	2.	Build & Deploy
-
-anchor build
-anchor deploy
 
 ⸻
 
